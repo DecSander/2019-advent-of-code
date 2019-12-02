@@ -1,4 +1,4 @@
-with open('day2-input.txt', 'r') as f:
+with open('input/day2.txt', 'r') as f:
   lines = map(int, f.read().split(','))
 
 def handle_simple_two_param_operation(func, position, numbers):

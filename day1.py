@@ -1,4 +1,4 @@
-with open('day1-input.txt', 'r') as f:
+with open('input/day1.txt', 'r') as f:
   lines = map(int, f.readlines())
 
 def get_fuel_needed(mass):
