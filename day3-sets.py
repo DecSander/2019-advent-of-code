@@ -30,11 +30,11 @@ def get_closest_intersection_to_zero(wire1_instructions, wire2_instructions):
   intersections = []
 
   wire1_location = [0, 0]
-  all_wire_1_locations = []
+  all_wire_1_locations = Set([])
   for i, instruction in enumerate(wire1_instructions):
     [new_locations, wire1_location] = process_instruction(instruction, wire1_location)
     for location in new_locations:
-      all_wire_1_locations.append(format_location_to_string(location))
+      all_wire_1_locations.add(format_location_to_string(location))
   all_wire_1_locations.remove(format_location_to_string([0, 0]))
 
   wire2_location = [0, 0]
